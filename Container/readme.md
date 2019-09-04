@@ -3,10 +3,10 @@
 - Container
     - These containers have dyanamic size
     - Collection
-        -List
+        - List
             - ArrayList
             - LinkedList
-        -Set
+        - Set
             - HashSet
                 - No order
             - TreeSet
