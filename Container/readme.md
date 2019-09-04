@@ -20,9 +20,10 @@
         - stack
             ```
             Why should I use Deque over Stack?
+             https://stackoverflow.com/questions/12524826/why-should-i-use-deque-over-stack
 
             ```
-                        https://stackoverflow.com/questions/12524826/why-should-i-use-deque-over-stack[https://stackoverflow.com/questions/12524826/why-should-i-use-deque-over-stack]
+                       
     - Map
       - HashMap
           - No order
