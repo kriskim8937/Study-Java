@@ -1,0 +1,21 @@
+## Container
+
+- Container
+    - These containers have dyanamic size
+    - Collection
+        -List
+            - ArrayList
+            - LinkedList
+        -Set
+            - HashSet
+                - No order
+            - TreeSet
+                - Ordered(Ascent) set
+            - LinkedHashSet
+        -Queue
+    - Map
+      - HashMap
+          - No order
+      - TreeMap
+          - Map is Ordered(Ascent) by key
+      - LinkedHashMap
