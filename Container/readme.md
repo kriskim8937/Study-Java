@@ -34,11 +34,15 @@
 https://en.wikiversity.org/wiki/Java_Collections_Overview
 
 ## Comparison
-| Tables        | Notes           | Cool  |
+| Tables        | Notes           | Retrieval  |
 |:-------------:|:-------------:|:-----:|
-| List     | Allows you to put elements in a specific order. Each element is associated with an index. | $1600 |
-| Set     | centered      |   $12 |
-| Queue | are neat      |    $1 |
-| PriorityQueue | are neat      |    $1 |
-| Deque | are neat      |    $1 |
-| Map | are neat      |    $1 |
+| List     | Allows you to put elements in a specific order. Each element is associated with an index. | Through iterator, or
+Random access by numerical index |
+| Set     | 	Prohibits duplicate elements. Easy test for membership. You can't order the elements.      |   Through iterator |
+| Queue | Only the "head" (next out) is available.     |   Peeking or polling, or
+Through iterator |
+| PriorityQueue | 	High priority elements get to the head first.      |   	Peeking or polling |
+| Deque | 	A "double-ended queue": insert and remove at both ends.      |    Peeking or polling, or
+Through iterator |
+| Map | Maps keys to values      |   Lookup by key object , or
+Through keySet, entrySet, values "views" |
