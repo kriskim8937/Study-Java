@@ -1,3 +1,8 @@
+## java web
+ - Java -> Java EE 로변경
+ - File -> new -> Dynamic Web Project
+ - Target RunTime -> Apache Tomcat v8.5
+ - Tomcat 경로설정
 ## post
 ## get
 Both GET and POST method is used to transfer data from client to server in HTTP
