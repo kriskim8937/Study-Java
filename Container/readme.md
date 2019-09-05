@@ -5,6 +5,7 @@
     - Collection
         - List
             - ArrayList
+                - remove(obj)
             - LinkedList
         - Set
             - HashSet
