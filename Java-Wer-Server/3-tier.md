@@ -29,3 +29,9 @@
       - 화면이 이동될때 데이터 흐름과 잘 매칭 시키가 Dispatcher pattern (원래 안됨)
   - Engine : request 들어오면 client 요소를 만들어서 response
   - Container (Spring ) 
+ - Session 로그인 한사람만 쓸수 있음 Session scope 나만 쓸수잇음 아이디를 Session에 저장 나만 사용할 수 있음
+ - requestscope : session scope 이랑 전혀더름 forward
+ - JSP 문법 : Scriptlette
+ - life cycle이 없는 POJO 객체 끌어 들어감 
+ - IOC Inversion Of Controll
+ - Framework : Strunts Spring
