@@ -1,5 +1,5 @@
 # 3-teir
-- Cliendt Tier
+- Client Tier
   - stateless + sync(request and response) : 브라우저가 아무일도 안하고 서버에서 답이 올때까지 기다림
   - Async : 동시에 할수 있게 해줌 XHR, AJAX, open, send, call back
   - Front End
@@ -14,14 +14,17 @@
     - Presentation layer 
       - view
       - jsp : for문 도는 이유 -> 화면을 구성하기 위한 로직
-      - Controller
+      - Controller : MVC v1을 가로채서 데이터 작업한후 v2 보냄 MVC는 개념(데이터작업 화면작업 나누자!-> 그럼실제로 어떻게 구현? facade pattern)
+        - facade : 문하나로 다 다니자 , c7
+        - servelet : controller의 핵심
     - Businesse layer(Service,Application layer) bl+dl => model
       - 통합해서 새로운 걸 만들어냄 
       - 이미 밖에서 만들어져 있는 서비스를 가져다 씀(xml webservice, json restful)
       - SOA(Service Oriented Architecture)
     - Data layer : 3개로 나뉨 (ORM)
-      - DAO : 
+      - DAO : service가 interface 주면 조립을 함 controller로 보냄 결과를 JSP랑 매핑
       - MyBatis
       - Hibernate
+      - 화면이 이동될때 데이터 흐름과 잘 매칭 시키가 Dispatcher pattern
   - Engine : request 들어오면 client 요소를 만들어서 response
   - Container (Spring ) 
