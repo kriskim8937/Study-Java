@@ -35,3 +35,24 @@
  - life cycle이 없는 POJO 객체 끌어 들어감 
  - IOC Inversion Of Controll
  - Framework : Strunts Spring
+# File directory
+  - src
+    - controller
+      - LoginServlet
+      - LogoutServlet
+      - MemberServlet
+      - RegisterServlet
+    - dao
+      - DB.java
+      - RegisterDAO.java
+      - MemberService.java
+      - RegisterDaoImplements.java
+    - model
+      - member.java
+  - WebContent
+    - index.jsp
+    - main.jsp
+    - members.jsp
+    - register.jsp
+    - login.jsp
+      
