@@ -39,10 +39,10 @@
   - src
     - controller
       - LoginServlet
-      	```
+```
 	doget()
 	doPost()
-	```
+```
       - LogoutServlet
       - MemberServlet
       - RegisterServlet
@@ -51,13 +51,13 @@
       - RegisterDAO.java //interface for RegisterDaoImple
       - MemberService.java
       - RegisterDaoImple.java //sql문 
-        ```
+	```
         <form action="./regiAf" method="post">
 		<table border="1px">
 		...
           	</table>
 	</form>
-        ```
+	```
     - model
       - member.java //getter, setter, constructer for member
   - WebContent
