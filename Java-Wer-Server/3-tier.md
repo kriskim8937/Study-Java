@@ -1,0 +1,27 @@
+# 3-teir
+- Cliendt Tier
+  - stateless + sync(request and response) : 브라우저가 아무일도 안하고 서버에서 답이 올때까지 기다림
+  - Async : 동시에 할수 있게 해줌 XHR, AJAX, open, send, call back
+  - Front End
+    - data type : Json(key:value), Xml(tag), p 
+  - HTML:Structure
+  - CSS : Style
+    - Selector (.,#,A B,A>B,A+B)
+  - JS(JQery):function
+  - Dom -> 
+- Server Tier
+  - 3 Layer
+    - Presentation layer 
+      - view
+      - jsp : for문 도는 이유 -> 화면을 구성하기 위한 로직
+      - Controller
+    - Businesse layer(Service,Application layer) bl+dl => model
+      - 통합해서 새로운 걸 만들어냄 
+      - 이미 밖에서 만들어져 있는 서비스를 가져다 씀(xml webservice, json restful)
+      - SOA(Service Oriented Architecture)
+    - Data layer : 3개로 나뉨 (ORM)
+      - DAO : 
+      - MyBatis
+      - Hibernate
+  - Engine : request 들어오면 client 요소를 만들어서 response
+  - Container (Spring ) 
