@@ -47,12 +47,22 @@
       - RegisterDAO.java
       - MemberService.java
       - RegisterDaoImplements.java
+        ```
+        <form action="./regiAf" method="post">
+		      <table border="1px">
+		      ...
+          </table>
+	      </form>
+        ```
     - model
       - member.java
   - WebContent
     - index.jsp
     - main.jsp
     - members.jsp
-    - register.jsp
-    - login.jsp
+    - register.jsp //회원가입 기능, form 이용해서 ID, pwd,  
+    - login.jsp //로그인기능, form 이용해서 ID pwd 보냄
+ - db
+  - schema members
+    - create table members
       
