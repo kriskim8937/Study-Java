@@ -21,10 +21,11 @@
       - 통합해서 새로운 걸 만들어냄 
       - 이미 밖에서 만들어져 있는 서비스를 가져다 씀(xml webservice, json restful)
       - SOA(Service Oriented Architecture)
+      - interface(Lolipop), DL의 service연결 
     - Data layer : 3개로 나뉨 (ORM)
       - DAO : service가 interface 주면 조립을 함 controller로 보냄 결과를 JSP랑 매핑
       - MyBatis
       - Hibernate
-      - 화면이 이동될때 데이터 흐름과 잘 매칭 시키가 Dispatcher pattern
+      - 화면이 이동될때 데이터 흐름과 잘 매칭 시키가 Dispatcher pattern (원래 안됨)
   - Engine : request 들어오면 client 요소를 만들어서 response
   - Container (Spring ) 
