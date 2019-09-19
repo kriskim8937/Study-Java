@@ -6,6 +6,11 @@ jQuery greatly simplifies JavaScript programming.
 
 jQuery is easy to learn.
 ```
+## JQery 사용법
+https://www.codingfactory.net/11173
+- CDN 이용
+- 직접 다운받아 이용
+
 - Traversing
   - Siblings
     https://www.w3schools.com/jquery/jquery_traversing_siblings.asp
