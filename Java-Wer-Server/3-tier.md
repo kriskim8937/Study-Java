@@ -37,11 +37,23 @@
  - Framework : Strunts Spring
  
 # MVC를 구현하기 위한 3대 패턴
+Model
+-dao 
+view
+- jsp 가 뷰맡음
+controller
+-servelet 을 이용해서 흐름제어, 나중에는 controller 라는 클래스가 나옴 
 FACADe 패턴
 service 는 Singletone 패턴
 Dao는 Factory 패턴
 Dispatcher 패턴
 servelet scope 란 객체 
+서블릿에서 내장객체가 들어옴 걔네 수명 이 스코프
+리퀘스트 객체는 클라이언트가 뭔가 받이면 사라짐
+포워드는 서블릿에서 서블릿 리스폰스 리퀘스트 같이 보냄 
+세션은 리퀘스트가 계속 바뀌어도 세션이 살아있음 쿠키 베이스 랜덤 난수를 쿠키로 발급하고 그걸로 판별
+ajax는 톰캣은 가고 html은 남겨두고  html 사이드에서 request 없음 응답이 http로 안오고 데이터가 안옴 
+
 https://www.javajee.com/application-request-session-and-page-scopes-in-servlets-and-jsps
 - 화명에서만 객체 쓰고 끝남 페이즈 스코프
 - forward하면 계속 객체 전달가능 주고받은 곳에만 있음 아니면 없어짐 request scope
