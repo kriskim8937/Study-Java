@@ -75,6 +75,9 @@ https://fruitdev.tistory.com/88
   - src
     - controller
       - LoginServlet
+      - LogoutServlet
+      - MemberServlet
+      - RegiCheck
 ```
 	doget()
 	doPost()
