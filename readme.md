@@ -41,8 +41,7 @@
     - service
     - dao
   - View - controller가 model이 리턴한 결과를 view에 반영하고 사용자에게 보여진다.
-    -
-  - Controller 사용자가 용청한 웹페이지를 ㅓ비스 하기 위해 모델을 호출한다.
+  - Controller 사용자가 용청한 웹페이지를 서비스 하기 위해 모델을 호출한다.
     - 이부분을 현재 servelet이 담당하지만 후에는 Controller가 담당
     - receive
     - interpret & valisate input
