@@ -19,6 +19,7 @@
   - 내장 객체 response request 등등을 가지고 있고 이를 선언함
   - response 객체의 데이터를 클라이언트로 보내줌 
 - servelet
+  - jsp와 servlet의 관계 https://gmlwjd9405.github.io/2018/11/04/servlet-vs-jsp.html
   - 백앤드 개발자가 주로 개발하는 부분
   - 톰캣이 만들어준 request 객체를 바탕으로 여러가지 작업을함
   - response 객체에 그러한 작업을 저장함 톰캣에게 넘겨줌
@@ -36,6 +37,7 @@
   - 데이터 가공
 
 - MVC 패턴 - 사람마다 정의가 약간씩 다르다. 
+  - https://m.blog.naver.com/jhc9639/220967034588
   - Model 데이터 베이스나 파일과 같은 데이터 소스를 제어 한후에 그결과를 리턴한다.
     - model
     - service
