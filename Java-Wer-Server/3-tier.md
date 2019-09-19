@@ -35,6 +35,42 @@
  - life cycle이 없는 POJO 객체 끌어 들어감 
  - IOC Inversion Of Controll
  - Framework : Strunts Spring
+ 
+# MVC를 구현하기 위한 3대 패턴
+FACADe 패턴
+service 는 Singletone 패턴
+Dao는 Factory 패턴
+Dispatcher 패턴
+servelet scope 란 객체 
+https://www.javajee.com/application-request-session-and-page-scopes-in-servlets-and-jsps
+- 화명에서만 객체 쓰고 끝남 페이즈 스코프
+- forward하면 계속 객체 전달가능 주고받은 곳에만 있음 아니면 없어짐 request scope
+- 내꺼는 어딜가든 '나만' 마음대로 사용할 수 있음 session scope
+- 누구나 가져다 쓸수 있는 영역 applicaiton scope
+
+- jsp 기본, 내장 객체
+- jsp는 이미 servlet 될 준비가 되어 있음
+- 서버는 상대경로를 못찾음 절대 경로 ,request parameter
+- 서버에서 클라이언트는 response 
+
+# 쿠키 
+- 접속 기록 남기기
+- 컴퓨터에 심어놈
+- 쿠키 모으는 사기꾼 hooker
+
+# Page 디렉티브
+https://hyeonstorage.tistory.com/73
+
+# include
+https://fruitdev.tistory.com/88
+- 정적인클루드
+- 동적 인클루드
+
+# JSTL
+- JSTL 이란? https://mkil.tistory.com/249
+- 
+
+
 # File directory
   - src
     - controller
