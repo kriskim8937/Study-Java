@@ -68,7 +68,7 @@ https://fruitdev.tistory.com/88
 
 # JSTL
 - JSTL 이란? https://mkil.tistory.com/249
-- 
+- taglib로 사용가능
 
 
 # File directory
