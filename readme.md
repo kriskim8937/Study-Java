@@ -50,10 +50,13 @@
   - https://m.blog.naver.com/jhc9639/220967034588
   - Model 데이터 베이스나 파일과 같은 데이터 소스를 제어(DML) 한후에 그결과를 리턴한다.
     - model
-    - service
+    - service(안에 dao 가들어감)
     - dao
   - View - controller가 model이 리턴한 결과를 view에 반영하고 이를 웹서버를 통해 클라이언트로 response해 사용자에게 보여준다.
     - 주로 JSP로 이루어져 있다. (JSP는 HTML상에서 JAVA를 사용하기 때문에 이에 적합하다)
+    - request dipatcher 패턴
+    - 스코프4개 / 페이지 스코프(페이지 context)/request scope/session scope/ application scope
+    - 이런 이미 만들어진 4개의 scope을 사용
   - Controller 사용자가 용청한 웹페이지를 서비스 하기 위해 모델을 호출한다.
     - 이부분을 현재 servelet이 담당하지만 후에는 Controller가 담당
     - receive
@@ -62,6 +65,10 @@
     - query & modify models; 모델에게 데이터를 요구
     - 주로 servelet으로 이루어져 있다. (servelet은 JAVA상에서 HTML을 사용하기 때문에 이에 적합하다)
 - hw로 구현한것이 http server, webserver, clien, 논리적, 역할적으로 구분한것이 container, mvc
+## 3tier
+- pl : controller
+- bl : dao model
+- dl : jdbc, orm, 
 ## database
 - Mysql
   - scheme
@@ -71,9 +78,12 @@
 - HTML 같은 정적 데이터를 처리하는 서버 정적 데이터의경우 was보다 처리가 빠르고 안정적
 ## WAS
 - Web server + Serice / 동적 데이터를 처리하는 서버 데이터베이스와 연결, MVC패턴이 들어갈 수 있음
+- service 14개(풀링,데이터등등)이 구현되있어야함 wepshpear!// 톰캣은 4개정도 밖에 없어서 was라고 안부름 
 - Cllent + HttpServer + service + datasource
 - 풀링/ 체계적인 관리, 연결시간 단축, syncronized queue, locked
 - 엔진/
-- 
+## ejb
+- 객체가 db야? 대박 큰사건/ 근데 어렵다 
+- 객체가 db 업데이트
 ## Reference
 - https://welin.tistory.com/5
