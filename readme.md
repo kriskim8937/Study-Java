@@ -29,8 +29,8 @@
   - servlet 이 할일이 많아서 분업함
   - insert select 등의 db 작업은 DAO에게 맞김 
 - DAO 
-  - servelet 의 요청을 받아 데이터 베이스와 관련된 작업, sql문 실행해서 데이터 가져오거나 비교하는 등의 작업을 함
-  - 다시 servlet에게 데이터 넘겨줌
+  - servelet(controller) 의 요청을 받아 데이터 베이스와 관련된 작업, sql문 실행해서 데이터 가져오거나 비교하는 등의 작업을 함
+  - 다시 servlet(controller)에게 데이터 넘겨줌
   - 로직을 수행하는 것은 아님 
 - model 
   - 요청의 흐름과 상관 없이 데이터를 가지고 있는 객체 자체
@@ -38,20 +38,27 @@
 
 - MVC 패턴 - 사람마다 정의가 약간씩 다르다. 
   - https://m.blog.naver.com/jhc9639/220967034588
-  - Model 데이터 베이스나 파일과 같은 데이터 소스를 제어 한후에 그결과를 리턴한다.
+  - Model 데이터 베이스나 파일과 같은 데이터 소스를 제어(DML) 한후에 그결과를 리턴한다.
     - model
     - service
     - dao
-  - View - controller가 model이 리턴한 결과를 view에 반영하고 사용자에게 보여진다.
+  - View - controller가 model이 리턴한 결과를 view에 반영하고 이를 웹서버를 통해 클라이언트로 response해 사용자에게 보여준다.
+    - 주로 JSP로 이루어져 있다. (JSP는 HTML상에서 JAVA를 사용하기 때문에 이에 적합하다)
   - Controller 사용자가 용청한 웹페이지를 서비스 하기 위해 모델을 호출한다.
     - 이부분을 현재 servelet이 담당하지만 후에는 Controller가 담당
     - receive
     - interpret & valisate input
     - create & update views;
-    - query & modify models;
+    - query & modify models; 모델에게 데이터를 요구
+    - 주로 servelet으로 이루어져 있다. (servelet은 JAVA상에서 HTML을 사용하기 때문에 이에 적합하다)
 ## database
 - Mysql
   - scheme
   - table
   - statements
-
+## Web server
+- HTML 같은 정적 데이터를 처리하는 서버 정적 데이터의경우 was보다 처리가 빠르고 안정적
+## WAS
+- Web server + Serice / 동적 데이터를 처리하는 서버 데이터베이스와 연결, MVC패턴이 들어갈 수 있음
+## Reference
+- https://welin.tistory.com/5
