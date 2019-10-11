@@ -12,10 +12,14 @@
   - Ajax (비동기 방식)
     - html은 그대로 두고 data만 보냄, 이를 서버에서 처리하고 data를 받아서 기존의 html에 추가함 
 ## Server
+- httpdemon
+  - 정적 동적 요소구분
+- 정적서버, 동적서버 /정적서버가 클라이언트랑 통신하고 동적 서버는 db랑 통신해서 만들어주는 역할
 - Tomcat 
   - 소켓 통신을 담당함
   - 클라이언트에서 받은 데이터를 request 객체 형태로 만들어줌
   - container역할, servelet들을 가지고 있음
+  - 엔진 html 만드는 것 
   - 내장 객체 response request 등등을 가지고 있고 이를 선언함
   - response 객체의 데이터를 클라이언트로 보내줌 
 - servelet
@@ -25,7 +29,7 @@
   - response 객체에 그러한 작업을 저장함 톰캣에게 넘겨줌
   - 흐름 컨트롤 
 - service
-  - 실질적인 로직 담당, 무언가 판단
+  - 실질적인 로직 담당(business logic), 무언가 판단
   - servlet 이 할일이 많아서 분업함
   - insert select 등의 db 작업은 DAO에게 맞김 
 - DAO 
@@ -35,6 +39,12 @@
 - model 
   - 요청의 흐름과 상관 없이 데이터를 가지고 있는 객체 자체
   - 데이터 가공
+  - service와 dao가 포함됨
+  - 여기서 service는 풀링등을 포함하는 service랑 다름, 우리가 직접 구현해서 dao를 조립한것
+  - dao로 jdbs혹은 orm 쓸수 있음 
+  - tcp/ip 3306 드라이버
+  - jdbc가 껍질
+  - ORM (아바티스, 하이버네이트) object에 데이터 넣으면 알아서  database와 통신을 할수 있게 해줌 
 
 - MVC 패턴 - 사람마다 정의가 약간씩 다르다. 
   - https://m.blog.naver.com/jhc9639/220967034588
@@ -51,6 +61,7 @@
     - create & update views;
     - query & modify models; 모델에게 데이터를 요구
     - 주로 servelet으로 이루어져 있다. (servelet은 JAVA상에서 HTML을 사용하기 때문에 이에 적합하다)
+- hw로 구현한것이 http server, webserver, clien, 논리적, 역할적으로 구분한것이 container, mvc
 ## database
 - Mysql
   - scheme
@@ -60,5 +71,9 @@
 - HTML 같은 정적 데이터를 처리하는 서버 정적 데이터의경우 was보다 처리가 빠르고 안정적
 ## WAS
 - Web server + Serice / 동적 데이터를 처리하는 서버 데이터베이스와 연결, MVC패턴이 들어갈 수 있음
+- Cllent + HttpServer + service + datasource
+- 풀링/ 체계적인 관리, 연결시간 단축, syncronized queue, locked
+- 엔진/
+- 
 ## Reference
 - https://welin.tistory.com/5
