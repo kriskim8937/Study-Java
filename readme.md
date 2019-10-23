@@ -29,6 +29,8 @@
   - response 객체에 그러한 작업을 저장함 톰캣에게 넘겨줌
   - 흐름 컨트롤 
 - service
+  - MVC 패턴 중 모델 안에 
+  - dao를 감싸는 것! dao.update, dao.insert 등등 dao 여러개를 하나로 합침
   - 실질적인 로직 담당(business logic), 무언가 판단
   - servlet 이 할일이 많아서 분업함
   - insert select 등의 db 작업은 DAO에게 맞김 
