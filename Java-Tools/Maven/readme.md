@@ -73,3 +73,26 @@ The following are the key features of Maven in a nutshell:
 - Coherent site of project information: Using the same metadata as for the build process, Maven is able to generate a web site or PDF including any documentation you care to add, and adds to that standard reports about the state of development of the project. Examples of this information can be seen at the bottom of the left-hand navigation of this site under the "Project Information" and "Project Reports" submenus.
 - Release management and distribution publication: Without much additional configuration, Maven will integrate with your source control system (such as Subversion or Git) and manage the release of a project based on a certain tag. It can also publish this to a distribution location for use by other projects. Maven is able to publish individual outputs such as a JAR, an archive including other dependencies and documentation, or as a source distribution.
 - Dependency management: Maven encourages the use of a central repository of JARs and other dependencies. Maven comes with a mechanism that your project's clients can use to download any JARs required for building your project from a central JAR repository much like Perl's CPAN. This allows users of Maven to reuse JARs across projects and encourages communication between projects to ensure that backward compatibility issues are dealt with.
+
+## 메이븐
+- build tool이다! ANT가 단지 build tool 에 가까웠다면 Maven은 훨씬 다양한 기능을 제공한다.
+- build too로써의 역할 -> src, resource를 통해서 jar, war 파일을 생성한다. (Ant도 같은 기능이 가능하다)
+- 표준 디렉토리 구조를 가짐으로써, 메이븐을 이용하는 누구나 파일 디렉토리를 쉽게 이해하고, 어떠한 디렉토리를 따로 설정할 필요가 없다.
+- dependency management, 메이븐 통합 레포지토리를 통해서 쉽게 라이브러리를 연결하고 업그레이드 할 수 있다.
+- 표준 인터페이스를 제공한다. mvn install 만으로 build가 가능하다.
+## Key words
+- life cycle : life cycle은 phase의 집합이다 default는 validate, compile, test, package, integration-test, verify, install, deploy이다
+- phase : 페이즈는 빌드 라이프사이클에서 순서만을 정의하고 있는 개념으로 직접 작업을 하는 것은 아니다. 직접 작업하는것은 plug in
+- site : site document? 프로젝트 문서
+- plug in : 메이븐의 모든 작업은 플러그인 기반으로 동작한다. 
+- goal : 한 plug in은 여러가지 goal을 실행할 수 있다. 
+
+## life cycle
+- validate
+- compile : 코드를 기계어로, 즉 java파일을 class로 변환하는 과정
+- test
+- package
+- integration-test
+- verify
+- install
+- depoy
