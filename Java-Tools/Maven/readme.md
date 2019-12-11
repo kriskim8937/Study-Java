@@ -90,6 +90,7 @@ The following are the key features of Maven in a nutshell:
 ## life cycle
 - validate
 - compile : 코드를 기계어로, 즉 java파일을 class로 변환하는 과정
+  - repository, dependency를 추가하고 mvn compile을 하면 자동으로 필요한 repository와 dependency를 다운로드한다.
 - test
 - package
 - integration-test
