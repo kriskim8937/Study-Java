@@ -1,6 +1,12 @@
 ## References
 - https://softwareengineering.stackexchange.com/questions/193630/summary-of-differences-between-java-versions
 - https://en.wikipedia.org/wiki/Java_version_history
+## Important Change
+- Java Platform Module System (jigsaw)
+- lambda expressions
+- generics
+- annotations
+- unified collections system
 ## Java 11
 #### Language changes:
 - Local-Variable Syntax for Lambda Parameters
