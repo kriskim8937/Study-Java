@@ -42,11 +42,11 @@
 #### Platform changes:
 
 - support for dynamic languages
-### Java 6 (a.k.a 1.6)
+## Java 6 (a.k.a 1.6)
 
 - Mostly incremental improvements to existing libraries, no new language features (except for the @Override snafu).
 
-### Java 5 (a.k.a 1.5)
+## Java 5 (a.k.a 1.5)
 
 #### Language Changes:
 
@@ -57,7 +57,7 @@
 #### Library changes:
 
 - concurrency utilities in java.util.concurrent
-### Java 1.4
+## Java 1.4
 
 #### Language changes:
 
@@ -67,13 +67,13 @@
 - regular expressions support
 - NIO
 - integrated XML handling
-### Java 1.3
+## Java 1.3
 
 Platform changes:
 
 - HotSpot JVM: improvement over the original JIT
 ## Java 1.2
-####Language changes:
+#### Language changes:
 
 - the strictfp keyword
 #### Library changes:
