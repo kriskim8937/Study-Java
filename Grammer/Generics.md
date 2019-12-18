@@ -9,10 +9,10 @@ ex)
 	    //return Arrays.stream(a).collect(Collectors.toList());
 	}
 ```
-> Generics는 Primitive 자료형 (ex>int)에 적용이 불가능하다. 
-왜? generics는 compile-time에서 이루어지는 것이기 때문이다. 이것은 type parameter가 삭제되고 모든 generic 타입이 Object type으로 구현된다는 것을 의미한다. 
-그러므로 type 파라미터는 모두 Object로 변환이 가능해야 한다. Primitive type은 Object를 extend(상속)하지 않기 때문에 primitive type을 파라미터로 사용할 수 없다. 
-하지만, Java는 primitve 형을 위해 boxed type(autoboxing, unboxing)을 제공하기 때문에 다음이 가능하다.
+- Generics는 Primitive 자료형 (ex>int)에 적용이 불가능하다. 
+- 왜? generics는 compile-time에서 이루어지는 것이기 때문이다. 이것은 type parameter가 삭제되고 모든 generic 타입이 Object type으로 구현된다는 것을 의미한다. 
+- 그러므로 type 파라미터는 모두 Object로 변환이 가능해야 한다. Primitive type은 Object를 extend(상속)하지 않기 때문에 primitive type을 파라미터로 사용할 수 없다. 
+- 하지만, Java는 primitve 형을 위해 boxed type(autoboxing, unboxing)을 제공하기 때문에 다음이 가능하다.
 
 ```java
 Integer a = 17;
@@ -28,3 +28,6 @@ List list = new ArrayList<>();
 list.add(Integer.valueOf(17));
 int first = ((Integer) list.get(0)).intValue();
 ```
+
+### references
+- https://www.baeldung.com/java-generics
