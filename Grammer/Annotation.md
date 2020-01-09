@@ -7,7 +7,7 @@
 
 ### Usage of annotations
 1. Instructions to the compiler
-**3buit-in annotations**
+- **3buit-in annotations**
 - Deprecated
 - Override
 - SuppressWarning
