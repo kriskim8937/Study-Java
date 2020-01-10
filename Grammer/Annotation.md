@@ -8,9 +8,9 @@
 ### Usage of annotations
 1. Instructions to the compiler
 - **3buit-in annotations**
-- Deprecated
-- Override
-- SuppressWarning
+  - Deprecated
+  - Override
+  - SuppressWarning
 2. Compile-time instructors 
 - Annotations can provide compile-time instructions to the compiler that can be further used by sofware build tools for generating code, XML files etc.
 3. Runtime instructions
