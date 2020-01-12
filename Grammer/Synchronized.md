@@ -2,7 +2,7 @@
 
 > This synchronization is implemented in Java with a concept called monitors. Only one thread can own a monitor at a given time. When a thread acquires a lock, it is said to have entered the monitor. All other threads attempting to enter the locked monitor will be suspended until the first thread exits the monitor.
  
-```
+``` java
 // A Java program to demonstrate working of 
 // synchronized. 
 import java.io.*; 
