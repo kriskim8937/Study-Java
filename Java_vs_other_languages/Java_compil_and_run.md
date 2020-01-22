@@ -18,8 +18,11 @@
 - platform independency
 - Security of program from virus
 
-
+## reflection
 - 아직 구현되지 않고 미래에 구현될 class 까지 실행이 가능하게 해준다
 - junit @test annotation이 써져있을 때 어떻게 알고 그걸 그런 방식으로 실행 시킬껀데?
 - @test가 지정되어 있으니까 그것들만 찾아서 그 코드들을 실행시켜 주는 거지
 - 엄청나게 큰 frame work에서 선언 되어 있지 않은 class 들에서도 가져온다/
+- 내가 어떤 코드를 짰어 근데 그냥 txt파일이든 다른 파일이든 그걸 어떻게 실행시킬꺼야..?
+- 원래는 컴파일 타임에 dependency가 전부 존재해야함, 그거는 jar 형태나 java 형태 여야함.
+- 근데 runtime에 그걸 붙일 수 있음??
