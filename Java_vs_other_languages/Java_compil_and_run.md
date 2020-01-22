@@ -1,5 +1,8 @@
 ## Comparison_with_other_language
 
+### What is loading?
+
+
 ### How it works?
 - 자바는 compile 언어와 interprete언어중에 무엇일까?
 - 컴파일 언어는 source code를 compile과정을 통해 bytecode(machine code와 다르다! virtual machine에 의해 실행된다.)로 변환하는 언어이다.
