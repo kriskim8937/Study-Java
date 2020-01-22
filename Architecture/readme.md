@@ -11,6 +11,10 @@
 - module을 사용해서 package들의 public method간의 accessibility를 조절할 수 있게 되었다.
 - module은 패키지의 집합이다. package의 public method들은 같은 module 안에 있는 package 끼리만 접근 가능하다.
 
+###
+- JVM architecture
+- JRE architecture
+
 
 ### references
 - https://www.concretepage.com/java/java-9/java-module
