@@ -1,0 +1,30 @@
+## JVM
+- Class Loader
+  - .java 파일에서 byte코드로 변환된 .class 파일을 JVM이 운영체제로 부터 할당받은 메모리 영역인 Runtime Data Area로 적재(load)하는 일을 한다.
+- Execution Engine
+  - 메모리에 적제된 .class(byte code)들을 기계어로 변경해 명령어 단위로 실행한다. 
+  - 명령어를 하나하나 실행하는 Interpreter 방식과 JIT(Just In Time) 방식이 있다. 
+  - JIT방식은 적절한 시간에 바이트 코드를 네이티브 코드로 변경해서 실행하여 성능을 높이는 방식이다. 
+- Garbage Collector
+  - Heap 메모리 영역에 생성(적재)된 객체들 중에 참조되지 않는 객체들을 탐색 후 제거하는 역할을 한다.
+  - GC가 수행 되는 동안 GC를 수행하는 쓰레드가 아닌 다른 모든 쓰레드가 일시정지 된다.
+- Runtime Data Area
+  - Method Area
+    - 클래스의 멤버 변수의 이름, 데이터 타입, 접근제어자 정보같은 필드 정보
+    - 메소드의 이름, 리턴 타입, 파라미터, 접근 제어자 정보 같은 메소드 정보
+    - class 인지 interface 인지 type정보, Constant Pool, static 변수, final class 등이 저장된다.
+  - Heap Area
+    - new 키워드로 생성된 객체와 배열이 생성되는 영역이다.
+    - 메소드 영역에 로드된 클래스만 생성이 가능하고 Garbage Collector가 참조되지 않는 메모리를 확인하고 제거한다.
+    - Eden
+    - Survivor
+    - Old
+    - Premanet
+  - Stack Area
+    - 지역 변수, 파라미터, 리턴 값, 연산에 사용되는 임시 값등이 생성되는 영역이다.
+    - 클래스 Person p = new Person(); 이라는 소스를 작성했다면 Person p는 스택영역에 생성되고, 
+    - new로 생성된 person클래스의 인스턴스는 힙영여게 생성된다.
+  - PC register
+    - 쓰레드가 생성될 때마다 생성되는 영역으로 Program Counter 즉, 현재 쓰레드가 실행되는 부분의 주소와 명령을 저장하고 있는 영역이다. 
+    - 이것을 이용해서 쓰레드를 돌아가면서 수행할 수 있게 한다.
+  - Native Method Area
