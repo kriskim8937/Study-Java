@@ -1,3 +1,10 @@
+## Summary
+- 리플렉션이 가진 기능들
+- 활용 방안
+	- annotation
+- 어떻게 이게 가능한지
+- 다른 언어의 기능과의 
+
 dynamic class loading
 	- 동적 클래스 로딩은 프로그램 시작전에 알려지지 않은 자바 코드를 로드할 수 있게 해준다.
 	- 이말은 , compile이 완료 되지 않고? dependency가 전부 연결되지 않은 class를 load 할 수 있따는 말이다. 
@@ -11,8 +18,19 @@ dynamic class loading
 	- Jvm 의 작동 방식 
 	- delegation model
 
-## usage for reflection:
+## 리플렉션의 장점
+- 구체적인 클래스 타입을 알지 못해도, 그 클래스의 메소드, 타입, 변수들을 접근할 수 있게 해주는 자바 api
+	- object 라는 타입으로, 어떠한 클래스의 인스턴스든 담을 수 있지만, 사용 가능한 메소드는 object에 정의된 메소드와 변수들 뿐..
+- 내가 만드는 프로그램의 코드 흐름인데, 내가 사용할 클래스의 이름과 타입을 모르는 경우가 있나????
+	- compile타임에 어떤 타입의 클래스를 사용할지 모르는 경우가 있다! 이럴 때는 runtime에 클래스를 가져와서 실행해야한다.
+	- 대표적으로 프레임 워크나 IDE에서 이러한 동적 바인딩을 이용한 기능을 제공한다.
+	- annotaion, intellij의 자동 완성등이 설계할 때는 사용될 클래스가 어떤 타입인지 모르지만 리플렉션을 이용해서 코드를 일단 작성하고 실행할 시점에 활용하게 해줌
+	- Reflection은 구체적은 클래스 타입을 알지 못해도, 클래스의 메소드, 타입 변수들을 접근할 수 있도록 해주는 JAVA API
 
+- 어떻게 이게 
+
+## usage for reflection:
+- Access private fields, violation of the objec oriented concept
 - Late binding
 - Security (introspect code for security reasons)
 - Code analysis
