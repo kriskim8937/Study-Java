@@ -1,4 +1,4 @@
-static clas loading vs dynamic class loading
+dynamic class loading
 	- 동적 클래스 로딩은 프로그램 시작전에 알려지지 않은 자바 코드를 로드할 수 있게 해준다.
 	- 이말은 , compile이 완료 되지 않고? dependency가 전부 연결되지 않은 class를 load 할 수 있따는 말이다. 
 	- compile time에 load 되지 않고, run time에 load 된다?
@@ -10,6 +10,19 @@ static clas loading vs dynamic class loading
 	- compile time runtime
 	- Jvm 의 작동 방식 
 	- delegation model
+
+## usage for reflection:
+
+- Late binding
+- Security (introspect code for security reasons)
+- Code analysis
+- Dynamic typing (duck typing is not possible without reflection)
+- Metaprogramming
+- Developed plugin system based on reflection
+- Used aspect-oriented programming model
+- Performed static code analysis
+- Used various Dependency Injection frameworks
+...
 
 
 JVM  내부 구조
