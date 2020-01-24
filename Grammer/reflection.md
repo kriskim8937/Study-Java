@@ -65,7 +65,9 @@ dynamic class loading
 - Reflection makes a language more suited to network-oriented code. 
 	- it assists languages such as Java to operate well in networks by enabling libraries for serialization, bundling and varying data formats.
 	- Languages without reflection (e.g. C) have to use auxiliary compilers, e.g. for Abstract Syntax Notation, to produce code for serialization and bundling. 
-		- Abstract Syntax Notaion : 여기서 ASN.1이 나오네, 카이 인공위성 소프트웨어에서 이거 씀 우리도 쓴다했던 것 같은데 
+		- Abstract Syntax Notaion : 여기서 ASN.1이 나오네, c++이
+#### Cons
+- introspect를 가능하게 함으로써 객체지향 rule을 깨고, encapsulation의 장점을 없애버림 
 
 ## reference
 - https://en.wikipedia.org/wiki/Reflection_(computer_programming)#Java 
