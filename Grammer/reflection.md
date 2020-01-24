@@ -6,8 +6,9 @@
 - 다른 언어에 있는 기능과의 
 
 ## What is ?
-  - process to examine, introspect, and modify its own structrue and behavior.
-  - 클래스의 구조를 개발자가 확인하고, 값을 가져오거나 메소드를 호출할 때사용
+- process to examine, introspect, and modify its own structrue and behavior.
+- 클래스의 구조를 개발자가 확인하고, 값을 가져오거나 메소드를 호출할 때사용
+- 컴파일 타임에 클래스의 type을 몰라도 Object로 선언하고 내부의 값을 확인하고 수정할 수 있음
   
 ## Where to use?
 - Spring Framework
@@ -26,12 +27,13 @@
 - class.getEnclosingClass()
   - 클래스에 enclose된 클래스 반환
 dynamic class loading
-	- 동적 클래스 로딩은 프로그램 시작전에 알려지지 않은 자바 코드를 로드할 수 있게 해준다.
-	- 이말은 , compile이 완료 되지 않고? dependency가 전부 연결되지 않은 class를 load 할 수 있다는 말이다. 
-	- compile time에 load 되지 않고, run time에 load 된다?
+- 동적 클래스 로딩은 프로그램 시작전에 알려지지 않은 자바 코드를 로드할 수 있게 해준다.
+- 이말은 , compile이 완료 되지 않고? dependency가 전부 연결되지 않은 class를 load 할 수 있다는 말이다. 
+- compile time에 load 되지 않고, run time에 load 된다?
 
 
 ## How is it works?
+	 - 
 자바 키워드
 
 	- 동적 로딩 , reflection , 정적 로딩, 런타임 로딩, 
@@ -39,6 +41,10 @@ dynamic class loading
 	- Jvm 의 작동 방식 
 	- delegation model
 
+
+## reference
+- https://en.wikipedia.org/wiki/Reflection_(computer_programming)#Java 
+	- 각언어에서 reflection 사용 예
 ## 리플렉션의 장점
 - 구체적인 클래스 타입을 알지 못해도, 그 클래스의 메소드, 타입, 변수들을 접근할 수 있게 해주는 자바 api
 	- object 라는 타입으로, 어떠한 클래스의 인스턴스든 담을 수 있지만, 사용 가능한 메소드는 object에 정의된 메소드와 변수들 뿐..
