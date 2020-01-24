@@ -1,10 +1,3 @@
-## Summary
-- 리플렉션이 가진 기능들
-- 활용 방안
-	- annotation
-- 어떻게 이게 가능한지
-- 다른 언어에 있는 기능과의 
-
 ## What is ?
 - In object-oriented programming languages such as Java, reflection allows inspection of classes, interfaces, fields and methods at runtime without knowing the names of the interfaces, fields, methods at compile time. It also allows instantiation of new objects and invocation of methods. 
 - process to examine, introspect, and modify its own structrue and behavior.
