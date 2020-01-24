@@ -6,16 +6,41 @@
 - 다른 언어에 있는 기능과의 
 
 ## What is ?
+- In object-oriented programming languages such as Java, reflection allows inspection of classes, interfaces, fields and methods at runtime without knowing the names of the interfaces, fields, methods at compile time. It also allows instantiation of new objects and invocation of methods. 
 - process to examine, introspect, and modify its own structrue and behavior.
 - 클래스의 구조를 개발자가 확인하고, 값을 가져오거나 메소드를 호출할 때사용
 - 컴파일 타임에 클래스의 type을 몰라도 Object로 선언하고 내부의 값을 확인하고 수정할 수 있음
+- 구체적인 클래스 타입을 알지 못해도, 그 클래스의 메소드, 타입, 변수들을 접근할 수 있게 해주는 자바 api
+	- object 라는 타입으로, 어떠한 클래스의 인스턴스든 담을 수 있지만, 사용 가능한 메소드는 object에 정의된 메소드와 변수들 뿐..
+- 내가 만드는 프로그램의 코드 흐름인데, 내가 사용할 클래스의 이름과 타입을 모르는 경우가 있나????
+	- compile타임에 어떤 타입의 클래스를 사용할지 모르는 경우가 있다! 이럴 때는 runtime에 클래스를 가져와서 실행해야한다.
+	- 대표적으로 프레임 워크나 IDE에서 이러한 동적 바인딩을 이용한 기능을 제공한다.
+	- annotaion, intellij의 자동 완성등이 설계할 때는 사용될 클래스가 어떤 타입인지 모르지만 리플렉션을 이용해서 코드를 일단 작성하고 실행할 시점에 활용하게 해줌
+	- Reflection은 구체적은 클래스 타입을 알지 못해도, 클래스의 메소드, 타입 변수들을 접근할 수 있도록 해주는 JAVA API
   
 ## Where to use?
+- Reflection helps programmers make generic software libraries to display data, process different formats of data, perform serialization or deserialization of data for communication, or do bundling and unbundling of data for containers or bursts of communication. 
+- Effective use of reflection almost always requires a plan: A design framework, encoding description, object library, a map of a database or entity relations. 
+- Reflection makes a language more suited to network-oriented code. 
+- Reflection can be used for observing and modifying program execution at runtime.
+- Reflection is often used as part of software testing, such as for the runtime creation/instantiation of mock objects. 
+- Reflection is also a key strategy for metaprogramming. 
+- In some object-oriented programming languages, such as C# and Java, reflection can be used to bypass member accessibility rules
+#### use cases
 - Spring Framework
   - 런타임 시에 개발자가 등록한 빈을 애플리케이션에서 가져와 사용가능
 - ORM Hibernate
 - Jackson library
-- 
+- Access private fields, violation of the objec oriented concept
+- Late binding
+- Security (introspect code for security reasons)
+- Code analysis
+- Dynamic typing (duck typing is not possible without reflection)
+- Metaprogramming
+- Developed plugin system based on reflection
+- Used aspect-oriented programming model
+- Performed static code analysis
+- Used various Dependency Injection frameworks
 
 ## How to use?
 - class.getSuperClass()
@@ -33,7 +58,8 @@ dynamic class loading
 
 
 ## How is it works?
-	 - 
+- java 언어는 compile시에 바로 machine code로 번역되는 것이 아니라 byte 코드로 변형 되고 runtime에 machine code로 번역되기에 가능하다.
+- compile 타임에 번역되더라도 runtime에는 
 자바 키워드
 
 	- 동적 로딩 , reflection , 정적 로딩, 런타임 로딩, 
@@ -41,97 +67,16 @@ dynamic class loading
 	- Jvm 의 작동 방식 
 	- delegation model
 
+## Pros and Cons
+#### Pros
+- Reflection makes a language more suited to network-oriented code. 
+	- it assists languages such as Java to operate well in networks by enabling libraries for serialization, bundling and varying data formats.
+	- Languages without reflection (e.g. C) have to use auxiliary compilers, e.g. for Abstract Syntax Notation, to produce code for serialization and bundling. 
+		- Abstract Syntax Notaion : 여기서 ASN.1이 나오네, 카이 인공위성 소프트웨어에서 이거 씀 우리도 쓴다했던 것 같은데 
 
 ## reference
 - https://en.wikipedia.org/wiki/Reflection_(computer_programming)#Java 
 	- 각언어에서 reflection 사용 예
-## 리플렉션의 장점
-- 구체적인 클래스 타입을 알지 못해도, 그 클래스의 메소드, 타입, 변수들을 접근할 수 있게 해주는 자바 api
-	- object 라는 타입으로, 어떠한 클래스의 인스턴스든 담을 수 있지만, 사용 가능한 메소드는 object에 정의된 메소드와 변수들 뿐..
-- 내가 만드는 프로그램의 코드 흐름인데, 내가 사용할 클래스의 이름과 타입을 모르는 경우가 있나????
-	- compile타임에 어떤 타입의 클래스를 사용할지 모르는 경우가 있다! 이럴 때는 runtime에 클래스를 가져와서 실행해야한다.
-	- 대표적으로 프레임 워크나 IDE에서 이러한 동적 바인딩을 이용한 기능을 제공한다.
-	- annotaion, intellij의 자동 완성등이 설계할 때는 사용될 클래스가 어떤 타입인지 모르지만 리플렉션을 이용해서 코드를 일단 작성하고 실행할 시점에 활용하게 해줌
-	- Reflection은 구체적은 클래스 타입을 알지 못해도, 클래스의 메소드, 타입 변수들을 접근할 수 있도록 해주는 JAVA API
-
-- 어떻게 이게 
-
-## usage for reflection:
-- Access private fields, violation of the objec oriented concept
-- Late binding
-- Security (introspect code for security reasons)
-- Code analysis
-- Dynamic typing (duck typing is not possible without reflection)
-- Metaprogramming
-- Developed plugin system based on reflection
-- Used aspect-oriented programming model
-- Performed static code analysis
-- Used various Dependency Injection frameworks
-...
+	- reflectino의 장점, 어디에 쓰이는지
 
 
-JVM  내부 구조
-	- Class Loader subsystem
-		○ feature of class Loader
-			§ Hierarchical
-			§ Delegate load request 
-				□ delegation은 class Loader을 이해하는데 매우 중요한 역할을 한다. 
-			§ Have Visibility Constraint
-			§ Cannot unload classes
-	- Runtime data area
-		○ Method area
-		○ Heap
-		○ Java satck
-		○ Pc register
-		○ Native Method stack
-	- Excecution engine
-
-
-
-Class Loader 
-
-자바 코드 실행 
-	- 자바는 compile time과 run time으로 나뉘어져서 실행된다.
-		○ JVM위에서 실행되기 때문에 다양한 플랫폼 환경에서도 실행가능하다. 
-	- compile time
-		○ source code를 byte code로 변환한다.
-	- run time
-		○ byte code가 JVM(Java Virtual Machine)위에서 실행된다.
-			§ 이때 machine 코드로 변환되는 부분도 있고, interprete 되는 부분도 있다. 
-	- references
-		○ https://stackoverflow.com/questions/846103/runtime-vs-compile-time
-
-
-jar 파일로 배포. 
-exe , exutable 한 파일로 배포 
-
-
-
-JAVA에서는 모든 object들이 Heap 메모리에 할당된다. 
-그와 다르게, c++ 에서는 object 들이 Stack , Heap 둘다 할당 될 수 있다. 
-C++ 에서는 , new () 를 사용해서 객체를 할당할 때, object가 Heap에 할당되고,
-global이나 static 이 아닌 다른 object들은 stack 에 할당된다. 
-
-자바에서는 class type의 variable을 선언했을때 오직 reference만 생성된다. 
-(이때memory가 object에 할당되지 않는다.)  
-object에 메모리를 할당하기 위해서는 new()를 사용해야만한다.  
-그 때문에, object는 항상 heap memory를 할당 받는다. 
-
-heap이 꽉차면, garabage 가 collect 된다. 
-
-
-
-Python Decorator vs Java Annotation
-	- 
-
-Python __dict__ vs Java reflection 
-	-  공통점 :
-		○ 둘다 introspection, class 내부를 탐색하는 것이 목표이다.
-		○ pascal, c, c++ 에는 이러한 기능이 없다. 
-	- Java reflection 
-		○ introspect 뿐만 아니라 내부를 조작할 수도 있다. 
-		○ class 내부의 멤버를 전부 보여줄 수 있따. 
-		
-	- Python dict: 
-		○ 파이썬 class body안에 어떤 attribute들이 정의되어 있는지 보여주는 기능을 한다.
-주의할 점 : __dict__는 class가 difinition syntax를 사용하고, 이 class가 만들어진 직후에만 신뢰성(reliablility)을 가진다. 
