@@ -87,3 +87,6 @@ dynamic class loading
 - 메모리에 대해 깊이 알필요 있음, class 에 변수를 선언하고 함수를 선언하고 
 - reflection이 있어서 java는 dependency injection을 쉽게 할 수 있다. reflection이 없다고 해서 dependency injection을 못하는 것은 아니다.
 - TLV
+- Serilization은 byte 코드로 변환 시켜주는 과정, java ,python, c언어 이것들은 다 각자의 방식이 있음 char 1byte int 4byte 이리ㅓㄴ식
+- Seriliazation, deSilazation 이거를 서로 통합해서 언어간 통신이 가능하게 해주는 것이 google protocol buffer
+- ++ 여기다가 해줄 수 잇는 
