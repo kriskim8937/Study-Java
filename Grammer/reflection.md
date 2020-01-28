@@ -82,5 +82,8 @@ dynamic class loading
  	- reflection의 사용예, 이렇게 자세하고 친절한 곳은 찾기 
 - https://medium.com/@sunminlee89/%EC%A7%81%EB%A0%AC%ED%99%94-serialization-%EC%99%80-java-serializable-android-parcelable%EA%B9%8C%EC%A7%80-8e1a8723aa77
 	- Serilizable에 관한 
-
-
+- ASN.1 이랑 Protocol buffer랑 Java Selialization이랑 Selialization을 하겠다는 목표는 같지만 
+- Selirization에 대해서 깊이 알필요 있음
+- 메모리에 대해 깊이 알필요 있음, class 에 변수를 선언하고 함수를 선언하고 
+- reflection이 있어서 java는 dependency injection을 쉽게 할 수 있다. reflection이 없다고 해서 dependency injection을 못하는 것은 아니다.
+- TLV
