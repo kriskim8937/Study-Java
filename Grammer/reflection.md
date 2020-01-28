@@ -69,6 +69,11 @@ dynamic class loading
 #### Cons
 - introspect를 가능하게 함으로써 객체지향 rule을 깨고, encapsulation의 장점을 없애버림 
 
+
+## Java Reflection - Arrays
+> 어떤 특정 타입의 array(int [])에 대한 Class object를 얻으려 한다면, JAVA reflection은 사용하기 매우 까다로울 것이다. Java reflection을 사용해서 어떻게 array를 생성하고, class object를 얻어내는지 알아보자. 
+
+
 ## reference
 - https://en.wikipedia.org/wiki/Reflection_(computer_programming)#Java 
 	- 각언어에서 reflection 사용 예
